@@ -1,0 +1,9 @@
+0.4: Nuevo diagrama de nota
+```
+graph TD
+  A[Usuario] -->|Escribe nota y hace clic en Save| B[Browser]
+  B -->|Envía solicitud POST a| C[Server]
+  C -->|Procesa la solicitud y actualiza datos| D[Server]
+  D -->|Devuelve respuesta| B
+  B -->|Actualiza la interfaz con la nueva nota| A
+```

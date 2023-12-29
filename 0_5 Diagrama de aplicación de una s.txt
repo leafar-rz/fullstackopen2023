@@ -1,0 +1,11 @@
+0.5: Diagrama de aplicación de una sola página
+```graph TD
+  A[Usuario] -->|Accede a| B[Browser]
+  B -->|Solicita la página SPA a| C[Server]
+  C -->|Envía el código HTML de la SPA| B
+  B -->|Carga la SPA en el navegador| D[SPA]
+  D -->|Solicita datos al| E[API/Server]
+  E -->|Devuelve datos a la SPA| D
+  D -->|Renderiza la interfaz de usuario| B
+  B -->|Usuario interactúa con la SPA| D
+```
